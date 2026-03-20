@@ -34,7 +34,7 @@ function VideoModal({ onClose, onSave }) {
         <form onSubmit={handle}>
           <div className="form-group">
             <label>Your Name</label>
-            <input placeholder="e.g. Amit Joshi" value={form.author}
+            <input placeholder="e.g. Varad" value={form.author}
               onChange={e => setForm(f => ({ ...f, author: e.target.value }))} />
           </div>
           <div className="form-group">
