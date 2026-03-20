@@ -52,7 +52,7 @@ function FeedbackModal({ onClose, onSave }) {
           <div className="form-row">
             <div className="form-group">
               <label>Your Name</label>
-              <input placeholder="e.g. Sneha Patil" value={form.author}
+              <input placeholder="e.g. Siddhesh" value={form.author}
                 onChange={e => setForm(f => ({ ...f, author: e.target.value }))} />
             </div>
             <div className="form-group">
