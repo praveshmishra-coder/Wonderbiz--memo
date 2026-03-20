@@ -42,7 +42,7 @@ function PhotoModal({ onClose, onSave }) {
         <form onSubmit={handle}>
           <div className="form-group">
             <label>Your Name</label>
-            <input placeholder="e.g. Priya Mehta" value={form.author}
+            <input placeholder="e.g. Sakshi" value={form.author}
               onChange={e => setForm(f => ({ ...f, author: e.target.value }))} />
           </div>
           <div className="form-group">
