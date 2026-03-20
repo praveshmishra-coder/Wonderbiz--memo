@@ -1,4 +1,4 @@
-const BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const BASE = process.env.REACT_APP_API_URL || 'https://wonderbiz-memos.onrender.com/';
 
 export const api = {
   get: (path) => fetch(`${BASE}${path}`).then(r => r.json()),
