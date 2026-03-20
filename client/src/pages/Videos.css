@@ -1,0 +1,22 @@
+.videos-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 28px;
+}
+.video-card { overflow: hidden; }
+.video-wrapper {
+  background: var(--ink); position: relative;
+  padding-top: 56.25%; /* 16:9 */
+}
+.video-wrapper video {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover;
+}
+.video-info { padding: 20px 24px; }
+.video-meta { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.video-title { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.video-author { font-size: 13px; color: var(--amber-dark); font-weight: 600; }
+.video-date { font-size: 12px; color: var(--ink-muted); margin-top: 4px; }
+
+@media (max-width: 600px) {
+  .videos-grid { grid-template-columns: 1fr; }
+}
