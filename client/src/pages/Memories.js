@@ -62,7 +62,7 @@ function MemoryModal({ onClose, onSave }) {
         <form onSubmit={handle}>
           <div className="form-group">
             <label>Your Name</label>
-            <input placeholder="e.g. Rahul Sharma" value={form.author}
+            <input placeholder="e.g. Yash" value={form.author}
               onChange={e => setForm(f => ({ ...f, author: e.target.value }))} />
           </div>
           <div className="form-group">
